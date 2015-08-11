@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PDF>
+	<pdf_width>917</pdf_width>
+	<pdf_height>800</pdf_height>
+	<pdf_pt_width>620</pdf_pt_width>
+	<pdf_pt_height>540</pdf_pt_height>
+	<LAYOUT>
+		<DATA>
+			<entry size="14" x="495" y="45">ext_id</entry>
+			<entry size="10" x="33" y="70" maxlength="30">ship_name</entry>	
+			<entry size="10" x="33" y="80" maxlength="30">ship_street1</entry>
+			<entry size="10" x="33" y="90" maxlength="30">ship_street2</entry>	
+			<entry size="10" x="33" y="100">ship_city</entry>	
+			<entry size="10" x="190" y="100">ship_province</entry>
+			<entry size="10" x="190" y="110">ship_country</entry>			
+			<entry size="10" x="33" y="110">ship_postal</entry>
+			<entry size="10" x="147" y="129">pup_area</entry>	
+			<entry size="10" x="33" y="129">ship_contact</entry>
+			<entry size="10" x="33" y="139">ship_phone</entry>
+			<entry size="10" x="248" y="70" maxlength="30">cons_name</entry>
+			<entry size="10" x="248" y="80" maxlength="30">cons_street1</entry>	
+			<entry size="10" x="248" y="90" maxlength="30">cons_street2</entry>
+			<entry size="10" x="248" y="100">cons_city</entry>	
+			<entry size="10" x="400" y="100">cons_province</entry>	
+			<entry size="10" x="400" y="110">cons_country</entry>	
+			<entry size="10" x="248" y="110">cons_postal</entry>
+			<entry size="10" x="362" y="129">del_area</entry>		
+			<entry size="10" x="248" y="129">cons_contact</entry>
+			<entry size="10" x="248" y="139">cons_phone</entry>
+			<entry size="10" x="33" y="155" maxlength="30">bill_name</entry>	
+			<entry size="10" x="33" y="165" maxlength="30">bill_street1</entry>	
+			<entry size="10" x="33" y="175" maxlength="30">bill_street2</entry>
+			<entry size="10" x="33" y="185">bill_city</entry>	
+			<entry size="10" x="190" y="185">bill_province</entry>
+			<entry size="10" x="190" y="195">bill_country</entry>	
+			<entry size="10" x="33" y="195">bill_postal</entry>	
+			<entry size="10" x="33" y="214">bill_contact</entry>
+			<entry size="10" x="33" y="224">bill_phone</entry>
+			<entry size="10" x="18" y="250">cust_broker</entry>
+			<entry size="10" x="439" y="108">reference</entry>
+			<entry size="10" x="439" y="137">bill_account</entry>		
+			<entry size="10" x="230" y="178" multiline="2">pup_note</entry>
+			<entry size="10" x="230" y="204" multiline="2">del_note</entry>
+			<entry size="10" x="439" y="187">division</entry>
+			<entry size="10" x="521" y="187">service</entry>
+			<entry size="10" x="521" y="219">service_ret</entry>
+			<entry size="10" x="439" y="219">equipment</entry>
+			<entry size="10" x="335" y="248">temp_level</entry>
+			<entry size="10" x="360" y="248">temp_value</entry>
+			<entry size="10" x="375" y="248">temp_unit</entry>		
+			<entry size="10" x="439" y="79">pup_date</entry>
+			<entry size="10" x="333" y="432">del_date</entry>
+			<entry size="10" x="398" y="432">del_time_from</entry>
+			<entry size="10" x="430" y="432">del_time_to</entry>
+			<entry size="10" x="521" y="79">pup_time</entry>
+			<entry size="10" x="205" y="389">dec_value</entry>	
+			<entry size="10" x="232" y="248">dg_un</entry>
+			<entry size="12" x="22"  y="398">total_pieces</entry>
+			<entry size="12" x="440"  y="398">total_weight</entry>
+		</DATA>		
+		<RADIOS>
+			<radio size="8" x="344" y="468" offset="32" orient="horizontal">
+				<options>
+					<lbs>1</lbs>
+					<kg>2</kg>
+				</options>
+				<key>shipon_weight_type</key>
+			</radio>
+		</RADIOS>
+		<SELECT>
+			<select size="10" x="420" y="527">
+				<options>
+					<van>Van/Dry Box</van>
+					<flatbed>Flat Bed</flatbed>
+					<rack_tarp>Rack and Tarp</rack_tarp>
+					<floats>Floats</floats>
+					<rester>Rester</rester>
+					<stepdeck>Step Deck</stepdeck>
+					<container>Container</container>
+					<lowboy>LowBoy/RGN</lowboy>
+					<streight>Streight Truck</streight>
+					<doubledrop>Double Drop</doubledrop>
+					<superb>Super B</superb>
+					<other>Other</other>
+				</options>
+				<key>shipon_equipment</key>
+			</select>
+		</SELECT>
+		<GOODS>
+			<table_start_y>290</table_start_y>
+			<line_height>17</line_height>
+			<size>10</size>
+			<column_data>
+				<column>
+					<offset>18</offset>
+					<keys>
+						<entry>pieces</entry>
+						<static> x </static>
+						<select>
+							<options>
+								<GF>GF</GF>
+								<DG>DG</DG>
+								<GFHT>GFHT</GFHT>
+								<HEAT>HEAT</HEAT>
+								<FDSTF>FDSTF</FDSTF>
+								<MTSKD>MTSKD</MTSKD>
+							</options>
+							<key>commodity</key>
+						</select>
+					</keys>
+				</column>
+				<column>
+					<offset>79</offset>
+					<keys>
+						<select>
+							<options>	
+							<E>Envelope</E>	
+							<B>Box</B>		
+							<crate>Crate</crate>
+							<pack>Package</pack>
+							<skid>Palette/Skid</skid>
+							<cchain>Cold Chain</cchain>
+							<roll>Roll</roll>		
+							<cooler>Cooler</cooler>	
+							<tender>Tender</tender>	
+							<fjacket>Film Jacket</fjacket>
+							<other>Other</other>	
+							</options>			
+						<key>packaging</key>
+						</select>
+						<entry>particulars</entry>`
+					</keys>
+				</column>
+				<column>	
+					<offset>283</offset>
+					<keys>
+						<entry>length</entry>
+					</keys>		
+				</column>	
+				<column>	
+					<offset>335</offset>	
+					<keys>
+						<entry>width</entry>
+					</keys>		
+				</column>	
+				<column>
+					<offset>387</offset>	
+					<keys>
+						<entry>height</entry>
+					</keys>		
+				</column>
+				<column>
+					<offset>440</offset>
+					<keys>
+						<entry>weight</entry>
+					</keys>
+				</column>
+				<column>
+					<offset>495</offset>
+					<keys>
+						<entry>rate</entry>
+					</keys>
+				</column>
+				<column>
+					<offset>547</offset>
+					<keys>
+						<entry>total</entry>
+					</keys>
+				</column>
+			</column_data>
+		</GOODS>
+		<CUSTOM>
+		</CUSTOM>
+	</LAYOUT>
+</PDF>

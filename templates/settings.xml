@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<SETTINGS>    
+	<field width="100%" help="yes">
+		<title>notification_settings</title>
+		<title_buttons><a class='shipon_titlebutton shipon_button' onclick='shipon_save_settings()'>Save</a></title_buttons>
+		<content>
+			<block width="50%">
+				<label style="width: 100px;">direct</label>
+				<input type="text" id="shipon_direct_notif" name="shipon_direct_notif" class="shipon_input"/>
+			</block>
+			<block width="50%">
+				<label style="width: 100px;">rush</label>
+				<input type="text" id="shipon_rush_notif" name="shipon_rush_notif" class="shipon_input"/>
+			</block>
+			<block width="50%">
+				<label style="width: 100px;">regular</label>
+				<input type="text" id="shipon_regular_notif" name="shipon_regular_notif" class="shipon_input"/>
+			</block>
+			<block width="50%">
+				<label style="width: 100px;">sameday</label>
+				<input type="text" id="shipon_sameday_notif" name="shipon_sameday_notif" class="shipon_input"/>
+			</block>
+			<block width="50%">
+				<label style="width: 100px;">overnight</label>
+				<input type="text" id="shipon_overnight_notif" name="shipon_overnight_notif" class="shipon_input"/>
+			</block>
+			<block width="50%">
+				<label style="width: 100px;">all_delivered</label>
+				<input type="text" id="shipon_all_notif" name="shipon_all_notif" class="shipon_input"/>
+			</block>
+		</content>
+	</field>    
+</SETTINGS>

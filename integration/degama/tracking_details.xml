@@ -1,0 +1,7 @@
+<REQUEST>
+	<TRACKING_DETAILS>
+		<pbnum>{$pbnum}</pbnum>
+		<bill_to_code>{$bill_to_code}</bill_to_code>
+		<AlphaTrackingNo>{$alpha}</AlphaTrackingNo>
+	</TRACKING_DETAILS>
+</REQUEST>

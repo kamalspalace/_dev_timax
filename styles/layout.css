@@ -1,0 +1,1368 @@
+@charset "utf-8";
+
+@font-face {
+    	font-family: 'ModernPictogramsNormal';
+    	src: url('shiponline/theme/mp-webfont.eot');
+    	src: url('shiponline/theme/mp-webfont.eot?#iefix') format('embedded-opentype'),
+    	     url('shiponline/theme/mp-webfont.woff') format('woff'),
+       	     url('shiponline/theme/mp-webfont.ttf') format('truetype'),
+             url('shiponline/theme/mp-webfont.svg#ModernPictogramsNormal') format('svg');
+    	font-style: normal;
+    	font-weight: normal;
+}
+
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('shiponline/theme/icomoon.eot');
+	src:url('shiponline/theme/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('shiponline/theme/icomoon.woff') format('woff'),
+		url('shiponline/theme/icomoon.ttf') format('truetype'),
+		url('shiponline/theme/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+.shipon_icon,
+.ie8 .shipon_icon {
+    color: #fff;
+    font-family: 'icomoon';
+    font-size: 16px;
+    margin-top: 4px;
+    line-height: 26px;
+    text-shadow: #000 1px 0px 0px;
+}    
+
+.shipon_help_icon
+{
+    font-family: 'ModernPictogramsNormal';
+    color: #fff;
+}
+
+.shipon_help_icon:hover
+{
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+	-webkit-appearance: none;
+	width: 7px;
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 4px;
+	background-color: rgba(0,0,0,.5);
+	-webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+#shipon_header
+{
+    height: 65px;
+}
+
+#shipon_header_wrapper
+{
+	padding: 6px 5px 0 5px;
+}
+
+#shipon_login_inputs
+{
+    line-height: 65px;
+}
+
+#shipon_loading
+{
+	padding: 5px 5px 6px 10px;
+	margin: 0px;
+}
+
+#shipon_loading img
+{
+	padding: 0 0 0 22px;
+	margin: 0 0 5px 0;
+}
+
+#shipon_accordion h3
+{
+    text-align: center;
+}
+
+.shipon_label
+{
+    width: 65px;
+    line-height: 26px;
+}
+
+
+#shipon_goods_table tr {line-height: 26px;}
+
+.shipon_inputlabel
+{
+
+}
+
+.ui-dialog,
+.shipon_field_container
+{
+    margin: 7px;
+}
+
+.ui-dialog-titlebar,
+.shipon_title
+{
+    line-height: 20px;
+	line-height: 19px\9;
+    height: 25px;
+}
+
+
+.shipon_fieldblock,
+.ui-button .ui-button-text
+{
+    line-height: 22px;
+}
+
+.shipon_fieldblock .ui-button
+{
+	margin-right: -1px !important;
+}
+
+.shipon_input
+{
+    margin: 0;
+    padding: 2px;
+}
+
+.shipon_titleblock
+{
+    margin-top: 6px;
+    margin-right: 10px;
+}
+.shipon_titleblock .shipon_input
+{
+    padding: 0;
+}
+.shipon_titlelabel
+{
+	margin-top: 5px;
+	margin-right: 5px;
+}
+
+.shipon_titleblock a
+{
+    margin-top: -11px;
+}
+
+.shipon_select 
+{
+    margin: 0; 
+    padding: 1px;
+}
+
+.shipon_slider
+{
+	margin: 6px 0 6px 6px;
+}
+
+.shipon_slider a
+{
+	text-decoration: none;
+	line-height: 18px;
+	text-align:center;
+	width: 1.5em !important;
+	margin-left: -.75em !important;
+}
+
+#shipon_bol_footer
+{
+	background: url("shiponline/theme/header.png") 0 50%;
+	width: 100%;
+	float: left;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.shipon_section_content
+{
+	background-color: #f1f1f1;
+}
+
+.shipon_titlebuttons
+{
+    margin: -3px 5px 0 0 !important;
+    vertical-align: top;
+}
+
+.ui-dialog-titlebar-close
+{
+    margin: -14px 2px 0 0 !important;
+    margin: -15px 2px 0 0\9 !important; 
+    padding: 0 10px !important;
+}
+
+.ui-dialog-titlebar-close.ui-state-hover
+{
+    padding: 0 10px !important;
+}
+
+.ui-icon-closethick          {background-position: -94px -126px !important;}
+.ui-icon-circle-triangle-w   {background-position: -94px -14px !important;}
+.ui-icon-circle-triangle-e   {background-position: -32px -14px !important;}
+
+.shipon_title_checkbox {margin-top: 9px;}
+
+.shipon_titlebutton
+{
+    padding: 0 6px;
+    line-height: 23px;
+}
+
+#shipon_back,
+#shipon_continue
+{
+    margin: 5px;
+    padding: 5px;
+}
+
+.shipon_header_button
+{
+    width: 110px;
+    height: 50px;
+    margin: 5px 5px 0px 4px;
+    padding: 3px 0px 3px 0px;
+}
+
+#tailgate,
+#delivery_appointment 
+{
+	margin-top: 12px;
+}
+
+.ie8 #tailgate:disabled,
+.ie8 #delivery_appointment:disabled 
+{
+    margin-top:3px !important;
+    background: none !important;
+    border: none !important;
+}
+.ie9 #tailgate:disabled,
+.ie9 #delivery_appointment:disabled
+{
+    margin-top:6px;
+    background: none;
+    border: none;
+}
+.ie8 #tailgate,
+.ie9 #tailgate,
+.ie8 #delivery_appointment,
+.ie9 #delivery_appointment
+{
+    margin-top:10px;
+}
+#shipon_address_book tr
+{
+    height: 92px;
+}
+
+#shipon_address_book input
+{
+   /* margin-top: 5px;*/
+}
+
+.shipon_addressbook_button
+{
+    width: 54px;
+    height: 34px;
+    line-height: 34px;
+    margin: 3px;
+}
+
+.shipon_address_data
+{
+    height: 84px;
+    font-size: 15px;
+    padding: 4px 5px;
+}
+
+.shipon_address_controls
+{
+    width: 60px;
+    height: 84px;
+    line-height: 42px;
+}
+
+.shipon_address_data .shipon_fieldblock,
+.shipon_address_data .shipon_fieldblock label
+{
+    line-height: 28px !important;
+}
+
+#shipon_shipper_save,
+#shipon_consignee_save
+{margin-left: 5px; line-height: 24px;}
+
+
+.shipon_delete_message
+{
+    line-height: 84px;
+}
+
+.shipon_address_data input, 
+.shipon_address_data select
+{
+    margin: 2px 0 0 0;
+    border: 2px solid #aca9a0;
+}
+
+.shipon_disabled
+{
+    margin: 4px 2px 2px 2px !important;
+}
+
+#shipon_accounts tr,
+#shipon_history tr,
+#shipon_tracking tbody tr
+{
+    height: 42px;
+}
+
+#shipon_tracking thead tr
+{
+    height: 40px;
+}
+
+.shipon_history_data
+{
+    height: 42px;
+}
+
+.shipon_history_controls
+{
+    width: 60px;
+    height: 42px;
+    line-height: 21px;
+}
+
+.shipon_accounts_button
+{
+    padding: 5px;
+    margin: 2px;
+}
+
+#shipon_tracking_date_from,
+#shipon_tracking_date_to
+{
+    width: 100px;
+    margin-top: 6px;
+}
+
+#shipon_history_search_button
+{
+	margin-top: -25px;
+	float: right;
+	line-height: 18px;
+}
+
+#shipon_address_new,
+#shipon_address_search_button
+{
+	vertical-align:top;
+	line-height: 21px;
+}
+
+#shipon_address_new
+{
+	margin-left: 5px;
+}
+
+#shipon_history_search,
+#shipon_address_search
+{
+	width: 200px;
+	margin-top: 6px;
+    color: #fff;
+}
+
+#shipon_tracking_update
+{
+    margin-top: -25px;
+
+    float: right;
+
+    line-height: 18px;
+}
+
+#shipon_pages
+{
+    margin-top: -5px;
+    padding: 0 5px;
+}
+
+.shipon_page_button
+{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    margin: 4px 2px;
+}
+
+.shipon_page_nav
+{
+    display: inline-block;
+
+    padding: 0px 7px;
+
+    line-height: 20px;
+
+    margin: 4px;
+}
+.shipon_button_disabled
+{
+    margin: 5px;
+}
+
+#shipon_account_delete_popup
+{
+    text-align: center;
+    line-height: 25px;
+}
+
+#switch,
+.address_save
+{
+    padding: 0 4px;
+}
+
+#shipon_delete_yes,
+#shipon_delete_no
+{
+    width: 40px;
+    text-align: center;
+}
+
+#shipon_login
+{
+    padding: 1px 5px;
+}
+
+#shipon_relogin_login,
+#shipon_relogin_cancel
+{
+    width: 50px;
+    text-align: center;
+}
+
+#shipon_relogin_login {margin-right: 3px;}
+#shipon_delete_yes, #shipon_relogin_login {float: right;}
+#shipon_delete_no, #shipon_relogin_cancel {float: left;}
+
+#shipon_edit {text-align: left;}
+#shipon_send {text-align: right;}
+
+.dialog_action
+{
+    margin-right: 7px;
+
+    padding: 0px 6px;
+}
+
+.ui-timepicker-div dt {width: 15px; line-height: 22px;}
+.ui-timepicker-div dd {width: 185px; line-height: 22px;}
+
+.ui-tabs-nav {display:none;}
+.ui-tabs .ui-tabs-panel	{padding: 0 !important;}
+
+.ui-autocomplete 
+{
+	max-height: 310px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#shipon_tracking_close
+{
+	float: left;
+	margin-left: 5px;
+}
+#shipon_tracking_title
+{
+	font-size: 20px;
+	line-height: 42px;
+	padding-right: 53px;
+	text-align: center;
+	text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.shipon_details_title
+{
+	font-size: 18px;
+	line-height: 30px;
+	text-align: center;
+	text-shadow: 0 0 10px rgba(0,0,0,0.5);
+	margin: 5px;
+}
+
+.shipon_details_container
+{
+	float: left;
+}
+
+.shipon_details_block_container
+{
+	overflow: hidden;
+	margin: 5px;
+}
+
+.shipon_details_block
+{
+	margin: 5px 0;
+}
+
+.shipon_details_label
+{
+	display: inline-block;
+	margin-left: 5px;
+}
+
+#shipon_rates_content
+{
+	float: right !important;
+}
+
+#shipon_edit_account_popup .shipon_fieldblock label
+{
+	display: inline-block;
+	line-height: 26px;
+}
+
+#shipon_account_popup .shipon_fieldblock label
+{
+	display: inline-block;
+	line-height: 26px;
+}
+
+#shipon_rates_table
+{
+	left: 0;
+	right: 0;
+	position: absolute;
+	border-collapse: collapse;
+	text-align: left;
+	z-index: 1;
+}
+
+#shipon_rates_table_container
+{
+	min-height: 99px;
+	max-height: 105px;
+	overflow: auto;
+ 	position: relative;
+}
+#shipon_rates_table_progress
+{
+	   top: 0;
+	  left: 0;
+     position: absolute;
+    min-height: 80px;
+       z-index: 1001;
+    background: rgba(255, 255, 255,0.75);
+	padding: 35px 320px 25px 320px;
+	overflow: none;
+}
+
+#shipon_rates_table tr
+{
+	height: 20px;
+}
+
+#shipon_disclaimer
+{
+	border: none;
+	color: #414240;
+	display: block;
+	font-size: 14px;
+	line-height: 20px;
+	margin: 5px 0px -20px 0px;
+	padding: 15px 8px 15px 10px;
+	background-color: #F7F7F8;
+}
+
+#shipon_division_message
+{
+	color: #CAED9E;
+	text-align:justify;
+	display: block;
+	font-size: 17px;
+	line-height: 17px;
+	margin-top: 7px;
+	float: right;
+	font-weight: bold;
+	
+	text-shadow: #282526 0 0 10px;
+}
+
+.qtip
+{
+	max-width: 224px !important;
+}
+
+#shipon_settings_view_header,
+#shipon_tracking_view_header
+{
+        float: left;
+	width: 100%;
+        clear: both;
+        height: 38px;
+        background-color: #eee;
+        border-bottom: 1px solid #c0c0c0;
+        box-shadow: inset -1px 1px 0px 0px #fff;
+        -webkit-box-shadow: inset 0px 1px 0px 0px #fff;
+        -moz-box-shadow: inset 0px 1px 0px 0px #fff;
+}
+
+.ie9 #shipon_tracking_details_ratable,
+.ie9 #shipon_tracking_details_hstable,
+.ie9 #shipon_tracking_details_info
+{
+	border: 1px solid #d8d8d8;
+}
+
+.ie9 #shipon_tracking_details_ratable tbody,
+.ie9 #shipon_tracking_details_hstable tbody,
+.ie9 #shipon_tracking_details_info tbody
+{
+        width: 100%;
+        display: inline-table;
+        border-left: 1px solid #d8d8d8;
+        border-right: 1px solid #d8d8d8;
+}
+
+.ie8 #shipon_tracking_details_info tr:first-child td,
+.ie9 #shipon_tracking_details_info tr:first-child td
+{
+	padding-top: 15px !important;
+}
+
+.ie9 #shipon_tracking_details_info tr:last-child td
+{
+	padding-bottom: 15px !important;
+}
+
+.ie8 #shipon_tracking_details_info
+{
+	background-color: #fff;
+	padding-bottom: 20px !important;
+}
+
+
+#shipon_tracking_details_info tbody tr td.label
+{
+        width: 120px;
+        padding-top: 10px !important;
+        padding-left: 20px !important;
+        vertical-align: top;
+        font-weight: bold;
+}
+
+#shipon_tracking_details_info tbody tr td.space
+{
+        width: 80px;
+}
+
+.shipon_tracking_details_hglyph
+{
+	float: left;
+	clear: both;
+	color: #808080;
+	font-size: 11px;
+	margin: 1px 4px 0px 5px;
+	font-family: 'icomoon';
+}
+
+
+.shipon_tracking_details_head
+{
+        float: left;
+        font-size: 12px;
+        font-weight: bold;
+        color: #808080;
+        text-shadow: 0px 1px 1px #fff;
+        margin: 0px 0px 10px 5px;
+}
+
+.shipon_tracking_details_text
+{
+        float: left;
+        clear: both;
+        font-size: 12px;
+        color: #3a3a3a;
+        margin: 0px 0px 3px 5px;
+
+}
+
+.shipon_tracking_details_line
+{
+        float: left;
+        clear: both;
+        width: 205px;
+        border-bottom: 1px solid #ddd;
+        margin: 0px 0px 20px 5px;
+        box-shadow: 0px 1px 1px #fff;
+}
+
+.shipon_tracking_aux_left
+{
+        float: left;
+        clear: both;
+        width: 100%;
+        color: #000;
+        font-weight: bold;
+        font-size: 13px;
+        text-align: left;
+        padding-left: 10px;
+        margin-top: 10px;
+}
+
+.shipon_tracking_aux_value
+{
+        float: left;
+        clear: both;
+        color: #000;
+        width: 100%;
+        text-align: left;
+        font-weight: normal;
+        font-size: 13px;
+        padding-left: 10px;
+        margin-top: 5px;
+}
+
+.shipon_tracking_details_dd
+{
+        float: right;
+}
+
+.shipon_tracking_details_hprod
+{
+        color: #545454;
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: underline;
+        width: 100%;
+
+}
+
+.shipon_tracking_details_rates,
+.shipon_tracking_details_hstatus,
+.shipon_tracking_details_info
+{
+        float: left;
+        clear: both;
+        color: #4a4a4a;
+        font-size: 14px;
+        margin-top: 3px;
+        padding: 6px 0px 0px 0px;
+        text-shadow: 1px 1px 1px #fff;
+	font-weight: bold;
+}
+
+span.shipon_icomoon_warning {
+    float: right;
+    color: #FFDF00;
+    font-size: 16px;
+    font-family: 'icomoon';
+    margin: 13px 10px 0px 0px;
+}
+
+
+span.shipon_icomoon_success {
+    float: right;
+    color: #62c462;
+    font-size: 16px;
+    font-family: 'icomoon';
+    margin: 13px 10px 0px 0px;
+}
+
+span.shipon_title_warning
+{
+    color: #fff;
+    float: right;
+    margin-top: 13px;
+}
+
+span.icomoon
+{
+    color: #fff;
+    font-family: 'icomoon';
+    font-weight: normal;
+    font-size: 12px;
+    padding-right: 5px;
+}
+
+a#shipon_edit_order
+{
+    color: #fff;
+    float: right;
+    min-width: 90px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background-color: #FAA732;
+    background-image: linear-gradient(to bottom, #FBB450, #F89406);
+    background-repeat: repeat-x;
+    border: 1px solid #F89406;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1);
+    padding: 5px 12px;
+    border-radius: 3px;
+    margin: 4px 6px 0px 0px;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+    text-align: center;
+}
+
+a#shipon_edit_order .icomoon
+{
+    font-size: 11px;
+    padding-right: 7px;
+}
+
+a#shipon_edit_order:hover
+{
+    background-color: #F89406;
+    background-image: linear-gradient(to bottom, #F89406, #FBB450);
+}
+
+
+a#shipon_submit_order
+{
+    color: #fff;
+    float: right;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background-color: #5bb75b;
+    background-image: linear-gradient(to bottom, #62C462, #279B27);
+    background-repeat: repeat-x;
+    border: 1px solid #348F34;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    padding: 5px 12px;
+    border-radius: 3px;
+    margin: 4px 6px 0px 0px;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+a#shipon_submit_order:hover {
+    background-color: #279B27;
+    background-image: linear-gradient(to bottom, #279B27, #62c462);
+}
+
+span#tracking_view_h2
+{
+    float: left;
+    font-size: 16px;
+    margin: 0px 0px 0px 8px;
+    font-weight: bold;
+    color: #3a3a3a;
+    text-shadow: 0px 1px 1px #fff;
+    width: 212px;
+    text-align: left;
+    padding-top: 0px;
+    line-height: 40px;
+}
+
+span#tracking_view_hs
+{
+        float: left;
+        color: #5c5c5c;
+        font-size: 22px;
+        font-weight: normal;
+        margin: 11px 9px 0px 10px;
+        color: #5c5c5c;
+        text-shadow: 0px 1px 1px #fff;
+}
+
+
+#shipon_tracking_details_ratable,
+#shipon_tracking_details_hstable,
+#shipon_tracking_details_info
+{
+        float: left;
+        clear: both;
+        width: 665px;
+        border-collapse: separate;
+        border-spacing: 0px;
+        margin-top: 12px;
+	margin-left: 10px;
+        font-size: 13px;
+        box-shadow: 1px 1px 3px rgb(236, 236, 236);
+        border-radius: 3px;
+}
+
+.ie8 #shipon_tracking_details_ratable,
+.ie9 #shipon_tracking_details_ratable,
+.ie8 #shipon_tracking_details_hstable,
+.ie9 #shipon_tracking_details_hstable,
+.ie8 #shipon_tracking_details_info,
+.ie9 #shipon_tracking_details_info
+{
+	border: 1px solid #d8d8d8;
+}
+
+#shipon_tracking_details_ratable tbody,
+#shipon_tracking_details_hstable tbody,
+#shipon_tracking_details_info tbody
+{
+        width: 100%;
+        display: inline-table;
+        border-left: 1px solid #beb5a4;
+        border-right: 1px solid #beb5a4;
+
+}
+
+#shipon_tracking_details_info tbody
+{
+        border: 1px solid #beb082;
+        border-radius: 3px;
+        padding: 10px 0px 20px 0px;
+        background-color: #fff;
+}
+
+#shipon_tracking_details_info tbody tr td.label
+{
+        width: 120px;
+        padding-top: 10px !important;
+        padding-left: 20px !important;
+        vertical-align: top;
+        font-weight: bold;
+}
+
+#shipon_tracking_details_info tbody tr td.space
+{
+        width: 80px;
+}
+
+#shipon_tracking_details_info tbody tr td.value
+{
+        width: 140px;
+        padding-top: 10px !important;
+        vertical-align: top;
+}
+
+#shipon_tracking_details_ratable tbody td,
+#shipon_tracking_details_hstable tbody td
+{
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        background-color: #fff;
+        text-align: center;
+        border-bottom: 1px solid #d8d8d8;
+}
+
+#shipon_tracking_details_hstable tbody td
+{
+        height: 31px !important;
+}
+
+#shipon_tracking_details_ratable tbody td:first-child,
+#shipon_tracking_details_hstable tbody td:first-child
+{
+        text-align: left;
+        padding-left: 10px !important;
+}
+
+#shipon_tracking_details_ratable thead,
+#shipon_tracking_details_hstable thead
+{
+        width: 100%;
+        display: inline-table;
+        border: 1px solid #beb5a4;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        background-color: #f8f8f8;
+}
+
+#shipon_tracking_details_ratable thead th:first-child,
+#shipon_tracking_details_hstable thead th:first-child
+{
+        color: #fff;
+        background-color: #beb082;
+        padding: 9px 0px 7px 10px !important;
+        text-shadow: 1px 1px 0px #7c7559;
+        font-size: 13px;
+        font-weight: bold;
+        border-left: 1px solid #fff;
+        border-top: 1px solid #fff;
+        text-align: left;
+        border-top-left-radius: 3px;
+}
+
+#shipon_tracking_details_ratable thead th:last-child,
+#shipon_tracking_details_hstable thead th:last-child
+{
+        border-top-right-radius: 3px;
+}
+
+#shipon_tracking_details_ratable thead th,
+#shipon_tracking_details_hstable thead th
+{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: #fff;
+        background-color: #beb082;
+        text-align: center;
+        text-shadow: 1px 1px 0px #7c7559;
+        font-size: 13px;
+        font-weight: bold;
+        border-top: 1px solid #fff;
+}
+
+#shipon_tracking_details_ratable tfoot,
+#shipon_tracking_details_hstable tfoot
+{
+        width: 100%;
+        display: inline-table;
+        border-top: none;
+        border-left: 1px solid #beb5a4;
+        border-right: 1px solid #beb5a4;
+        border-bottom: 1px solid #beb5a4;
+        border-radius: 3px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        background-color: #f8f8f8;
+}
+
+#shipon_tracking_details_ratable tfoot td,
+#shipon_tracking_details_hstable tfoot td
+{
+        font-weight: normal;
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        padding-right: 15px !important;
+        text-align: right;
+        background-color: #fff;
+}
+
+#shipon_tracking_details_ratable tfoot tr td:first-child,
+#shipon_tracking_details_hstable tfoot tr td:first-child
+{
+        font-weight: bold;
+        text-align: right;
+        padding-left: none;
+        border-bottom-left-radius: 3px;
+}
+
+#shipon_tracking_details_ratable tfoot tr td:last-child,
+#shipon_tracking_details_hstable tfoot tr td:last-child
+{
+        padding-right: 28px !important;
+        border-bottom-right-radius: 3px;
+}
+
+#shipon_tracking_view_sidetail
+{
+        width: 228px;
+        height: 430px;
+        float: left;
+        background-color: #eee;
+        padding: 21px 0px 0px 11px;
+        text-align: left;
+        border-top: 1px solid #fff;
+        border-left: 1px solid #fff;
+	border-bottom-right-radius: 3px;
+}
+
+#shipon_tracking_view_radetail
+{
+        width: 709px;
+        float: left;
+        background-color: #fafafa;
+        box-shadow: inset 0px 1px 1px #d8d8d8;
+        text-align: left;
+        padding: 6px 0px 40px 9px;
+        overflow-y: scroll;
+        height: 406px;
+        border-bottom-left-radius: 3px;
+}
+
+.ie8 #shipon_tracking_view_radetail,
+.ie9 #shipon_tracking_view_radetail
+{
+        background-color: #fafafa !important;
+}
+
+
+#shipon_tracking_view_auxdetail
+{
+        width: 220px;
+        float: left;
+        box-shadow: inset 0px 1px 0px #dbdbdb;
+        min-height: 432px;
+        padding-top: 45px;
+        padding-right: 12px;
+        background-color: #fafafa;
+}
+
+#shipon_tracking_aux_docinfo
+{
+        float: left;
+        width: 100%;
+        border: 1px solid #f3dcb1;
+        text-align: left;
+        padding-bottom: 15px;
+        background-color: #fff;
+}
+
+#shipon_tracking_aux_docinfo .shipon_tracking_aux_head
+{
+        float: left;
+        width: 210px;
+        color: #c7a756;
+        background-color: #f8eeb8;
+        height: 24px;
+        padding: 9px 0px 0px 10px;
+        text-shadow: 0px 1px 1px #fff;
+        font-size: 13px;
+}
+
+.shipon_tracking_aux_left
+{
+        float: left;
+        clear: both;
+        width: 100%;
+        color: #000;
+        font-weight: bold;
+        font-size: 13px;
+        text-align: left;
+        padding-left: 10px;
+        margin-top: 10px;
+}
+
+ 
+span#tracking_view_hcons
+{
+        float: left;
+        color: #5c5c5c;
+        font-size: 15px;
+        font-weight: normal;
+        margin: 16px 9px 0px 1px;
+        color: #5c5c5c;
+        text-shadow: 0px 1px 1px #fff;
+}
+
+#shipon_tracking_view_shipper
+{
+        float: left;
+        clear: both;
+        width: 341px;
+        height: 210px;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #c0c0c0;
+        border-right: 1px solid #c0c0c0;
+}
+
+.shipon_tracking_view_divhead
+{
+        float: left;
+        width: 329px;
+        font-size: 15px;
+        color: #3a3a3a;
+        text-shadow: 0px 1px 1px #fff;
+        text-align: center;
+        height: 37px;
+        padding-left: 10px;
+        line-height: 40px;
+        background-color: #eee;
+        border-right: 1px solid #fff;
+        border-left: 1px solid #fff;
+}
+
+.shipon_tracking_button
+{
+	float: right;
+	width: 13px;
+	height: 14px;
+    border: 1px solid #bdbdbd;
+	border-radius: 3px;
+	padding: 6px 7px;
+	box-shadow: inset 1px 1px 1px 0px #fff;
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.85, rgb(238, 238, 238)), color-stop(1, rgb(221, 221, 221)) );
+	margin: -5px 5px 0px 0px;
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	text-decoration: none;
+	font-size: 14px;
+	color: #333;
+}
+
+.shipon_tracking_button:hover
+{
+	color: #000;
+	cursor: pointer;
+	border: 1px solid #f3f3f3;
+	box-shadow: inset 1px 1px 1px 0px #a2a2a2;
+	background: #e2e2e2;
+	
+}
+
+.shipon_tracking_button_disable_hover, .shipon_tracking_button_disable_hover:hover
+{
+	color: #afafaf;
+	cursor: default;
+	border: 1px solid #bdbdbd;
+	background: #e0e0e0;
+	box-shadow: inset 1px 1px 1px 0px #fff; 
+}
+
+span.tracking_status_LDD,
+span.tracking_status_DOC
+{
+	background-color: #3671ca;
+	padding: 4px 9px;
+	border-radius: 3px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #fff;
+}
+
+span.tracking_status_DPU,
+span.tracking_status_DSP
+{
+        background-color: #8002BB;
+        padding: 4px 9px;
+        border-radius: 3px;
+        font-size: 12px;
+        font-weight: bold;
+        color: #fff;
+}
+
+span.tracking_status_AVL
+{
+        background-color: #f8b132;
+        padding: 4px 9px;
+        border-radius: 3px;
+        font-size: 12px;
+	font-weight: bold;
+        color: #fff;
+}
+
+span.tracking_status_DEL
+{
+	background-color: #7bc22d;
+	padding: 4px 9px;
+	border-radius: 3px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #fff;
+}
+
+span.tracking_status_CNC
+{
+        background-color: #ca3636;
+        padding: 4px 9px;
+        border-radius: 3px;
+        font-size: 12px;
+        font-weight: bold;
+        color: #fff;
+}
+
+span.tracking_status_UPS
+{
+        background-color: #776442;
+        padding: 4px 9px;
+        border-radius: 3px;
+        font-size: 12px;
+        font-weight: bold;
+        color: #f7d525 !important;
+}
+
+span.tracking_status_PUR
+{
+        background-color: #F00;
+        padding: 4px 9px;
+        border-radius: 3px;
+        font-size: 12px;
+        font-weight: bold;
+        color: #FFF !important;
+}
+
+span.tracking_service_lvl
+{
+	font-size: 13px;
+	color: #000;
+	padding: 5px 0px;
+	text-transform: uppercase;
+}
+
+span.tracking_service_lvl:hover
+{
+	color: #fff;
+}
+
+span.tracking_datetime
+{
+	color: #000;
+	font-size: 13px;	
+	font-weight: bold;
+}
+
+a.tracking_pbnum_link
+{
+	font-size: 14px;
+	font-weight: bold;
+
+}
+
+#shipon_settings_general
+{
+	float: left;
+	clear: both;
+	width: 100%;
+	min-height: 421px;
+  	background-color: #ecebe6;
+	border-radius: 3px;
+}
+
+.shipon_settings_left
+{
+	float: left;
+	width: 483px;
+	padding: 1px 0px 0px 0px;
+	margin-left: 2px;
+}
+
+.shipon_settings_left .shipon_fieldblock
+{
+        margin: 1px 0px;
+        background-color: #e4e2db;
+        padding: 5px 0px 1px 7px;
+}
+
+.shipon_settings_left .shipon_fieldblock input
+{
+	margin-bottom: 3px;
+}
+
+.shipon_settings_left .shipon_fieldblock input[type='radio']
+{       
+        margin: 7px 0px 7px 0px;
+}
+
+.shipon_settings_right
+{
+	float: left;
+	width: 460px;
+	padding: 1px 0px 0px 0px;
+	margin-left: 2px;
+}
+
+.shipon_settings_right .shipon_fieldblock
+{
+	margin: 1px 0px;
+	background-color: #e4e2db;
+	padding: 5px 0px 1px 7px;
+
+}

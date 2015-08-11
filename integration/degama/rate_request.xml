@@ -1,0 +1,123 @@
+{* variable declarations *}
+{assign var="division" value=$shipment.division}
+{assign var="service" value=$shipment.service}
+{assign var="total_pieces" value=0}
+{assign var="total_weight" value=0}
+{assign var="total_skids" value=0}
+{assign var="is_tender" value=0}
+
+{capture name='goods'}
+  {foreach from=$shipment.goods key=i item=good}
+     <GOOD>
+         <return>{$good.return_good}</return>
+         <pieces>{$good.pieces}</pieces>
+         <commodity>{$good.commodity}</commodity>
+         <packaging>{$good.packaging}</packaging>
+         <description>{$good.particulars}</description>
+         <length>{if $good.length gt 0}{$good.length}{/if}</length>
+         <width>{if $good.width gt 0}{$good.width}{/if}</width>
+         <height>{if $good.height gt 0}{$good.height}{/if}</height>
+         <weight>{if $good.weight gt 0}{$good.weight}{/if}</weight>
+         {assign var="total_pieces" value="`$total_pieces+$good.pieces`"}
+         {assign var="total_weight" value="`$total_weight+$good.weight`"}
+         {if $good.packaging == 'S'}{assign var="total_skids" value="`$total_skids+$good.pieces`"}{/if}
+         {if $good.commodity == 'TND'}{assign var="is_tender" value=1}{/if}
+     </GOOD>
+  {/foreach}
+{/capture}
+
+{* LOGIC FOR FREIGHT SERVICES *}
+
+{* CASE 1: <= 2 SKIDS && VAN && INSIDE GTA *}
+{* RE-RATE AS A MESSENGER SERVICE *} 
+{if $total_skids > 0 && $total_skids < 3 && $shipment.equipment == 'VAN'}
+
+   {* EXP = DR *}
+   {if $shipment.service == 'EXP'}{$service="DR"}{/if}
+
+   {* RSL = RS *}
+   {if $shipment.service == 'RSL'}{$service="RS"}{/if}
+
+   {* SDL = SD *}
+   {if $shipment.service == 'SDL'}{$service="SD"}{/if}
+
+   {* ONL = ON *}
+   {if $shipment.service == 'ONL'}{$service="ON"}{/if}
+
+   {* Change division to messenger *}
+   {$division="MES"}
+{/if}
+
+<REQUEST>
+	<NEW_ORDER>
+		{if isset($shipment.ext_id)}<PBNUM>{$shipment.ext_id}</PBNUM>
+		{/if}<DETAILS>
+			<division>{$division}</division>
+			<service>{$service}</service>
+         <reference_no>{$shipment.reference}</reference_no>
+			<return_service>{$shipment.service_ret}</return_service>
+			<declared_value>{$shipment.dec_value}</declared_value>
+			<pod_email>{$shipment.pod_email}</pod_email>
+			<gps_email>{$shipment.gps_email}</gps_email>
+		</DETAILS>
+		<SHIPPER>
+                        <name>{$shipment.ship_name}</name>
+                        <contact>{$shipment.ship_contact}</contact>
+                        <address1>{$shipment.ship_street1}</address1>
+                        <address2>{$shipment.ship_street2}</address2>
+                        <city>{$shipment.ship_city}</city>
+                        <province>{$shipment.ship_province}</province>
+                        <country>{$shipment.ship_country}</country>
+                        <postal>{$shipment.ship_postal|substr:0:3} {$shipment.ship_postal|substr:3:3}</postal>
+                        <phone>{$shipment.ship_phone}</phone>
+                        <ext>{$shipment.ship_ext}</ext>
+		</SHIPPER>
+		<CONSIGNEE>
+                        <name>{$shipment.cons_name}</name>
+                        <contact>{$shipment.cons_contact}</contact>
+                        <address1>{$shipment.cons_street1}</address1>
+                        <address2>{$shipment.cons_street2}</address2>
+                        <city>{$shipment.cons_city}</city>
+                        <province>{$shipment.cons_province}</province>
+                        <country>{$shipment.cons_country}</country>
+                        <postal>{$shipment.cons_postal|substr:0:3} {$shipment.cons_postal|substr:3:3}</postal>
+                        <phone>{$shipment.cons_phone}</phone>
+                        <ext>{$shipment.cons_ext}</ext>
+		</CONSIGNEE>
+		<BILL_TO>
+			<bill_to_code>{$shipment.bill_account}</bill_to_code>
+		</BILL_TO>
+		<FREIGHT_DETAILS>
+			<GOODS>	
+			  {$smarty.capture.goods}
+			</GOODS>			
+			<DETAILS>
+				<equipment>{if $shipment.service != 'NF'}{$shipment.equipment}{/if}</equipment>
+            <tailgate>{$shipment.tailgate}</tailgate>
+				<temp>{$shipment.temp_value}</temp>
+				<level_of_temp>{$shipment.temp_level}</level_of_temp>
+				<broker>{if $shipment.cust_broker != 0}{$shipment.cust_broker}{/if}</broker>
+				<total_pieces>{$total_pieces}</total_pieces>
+				<total_weight>{$total_weight}</total_weight>
+				<number_of_skids>{$total_skids}</number_of_skids>
+				<un_number>{if $shipment.dg_un != 0}{$shipment.dg_un}{/if}</un_number>
+				<UOM>imperial</UOM>
+			</DETAILS>
+		</FREIGHT_DETAILS>
+		<PICKUP>
+                        <appointment_required>1</appointment_required>
+                        <date>{$shipment.pup_date}</date>
+                        <time_from>{$shipment.pup_time}</time_from>
+                        <area>{$shipment.pup_area}</area>
+                        <instructions>{$shipment.pup_note}</instructions>
+		</PICKUP>
+		<DELIVERY>
+                        <appointment_required>{$shipment.del_appt}</appointment_required>
+                        <date>{$shipment.del_date}</date>
+                        <time_from>{$shipment.del_time_from}</time_from>
+                        <time_to>{$shipment.del_time_to}</time_to>
+                        <area>{$shipment.del_area}</area>
+                        <instructions>{$shipment.del_note}{if $is_tender > 0}THIS IS A TENDER{/if}</instructions>
+		</DELIVERY>
+	</NEW_ORDER>
+</REQUEST>

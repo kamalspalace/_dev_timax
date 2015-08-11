@@ -1,0 +1,6 @@
+<REQUEST>
+   <GET_LOCATION>
+      <pbnum>{$pbnum}</pbnum>
+      <subno>0</subno>
+   </GET_LOCATION>
+</REQUEST>

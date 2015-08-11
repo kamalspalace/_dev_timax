@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<VALIDATION>
+    <SECTION>
+	<FIELD>
+	    <rule message="You need to select a division to continue">shipon_division</rule>
+	</FIELD>
+        <FIELD>
+            <rule minlength="3">shipon_ship_name</rule>
+            <rule minlength="10">shipon_ship_phone</rule>
+            <rule minlength="3">shipon_ship_street1</rule>
+            <rule minlength="3">shipon_ship_city</rule>
+            <rule minlength="2">shipon_ship_province</rule>
+            <rule validateState="true">shipon_ship_province</rule>
+            <rule minlength="5">shipon_ship_postal</rule>
+        </FIELD>
+        <FIELD>
+            <rule minlength="3">shipon_cons_name</rule>
+            <rule minlength="10">shipon_cons_phone</rule>
+            <rule minlength="3">shipon_cons_street1</rule>
+            <rule minlength="3">shipon_cons_city</rule>
+            <rule minlength="2">shipon_cons_province</rule>
+	    <rule validateConsState="true">shipon_cons_province</rule>
+            <rule minlength="5">shipon_cons_postal</rule>
+        </FIELD>
+        <FIELD>
+            <rule minlength="3">shipon_bill_name</rule>
+            <rule minlength="3">shipon_bill_street1</rule>
+            <rule minlength="3">shipon_bill_city</rule>
+            <rule minlength="5">shipon_bill_postal</rule>
+        </FIELD>
+	<FIELD>
+            <rule message="Please select a pickup area">shipon_pup_area</rule>
+            <rule minlength="3">shipon_pup_area_other</rule>
+        </FIELD>
+	<FIELD>
+            <rule message="Please select a delivery area">shipon_del_area</rule>
+            <rule minlength="3">shipon_del_area_other</rule>
+    </FIELD>
+    </SECTION>
+    <SECTION>
+        <FIELD>
+			<rule digits="true" min="1">shipon_pieces</rule>
+			<rule digits="true" min="1">shipon_weight</rule>
+			<rule minlength="4">shipon_dg_un</rule>	
+        </FIELD>
+    </SECTION>
+    <SECTION>
+		<FIELD>
+			<rule message="You need to select a service to continue">shipon_service</rule>
+		</FIELD>
+		<FIELD>
+			<rule message="You need to select a return service to continue">shipon_service_ret</rule>
+		</FIELD>
+        <FIELD>
+            <rule minlength="8">shipon_del_date</rule>
+            <rule minlength="5">shipon_del_time_from</rule>
+            <rule minlength="5">shipon_del_time_to</rule>
+        </FIELD>
+<!--		<FIELD>
+            <rule message="You need to get rates to continue.">shipon_total_charge</rule>
+        </FIELD>-->
+    </SECTION>
+</VALIDATION>
